@@ -1,17 +1,66 @@
 __pycache__/
 *.pyc
 hello.txt
-C++/Task1/Task 1/.vs/Task 1/FileContentIndex/fedcd751-52bc-47ff-8f1f-094b2bbc6938.vsidx
-C++/Task2/Task2/.vs/Task2/FileContentIndex/0a123a17-5737-48aa-a94c-b47ccae81f5c.vsidx
-C++/Task1/Task 1/.vs/Task 1/v17/.suo
-C++/Task1/Task 1/.vs/Task 1/v17/Browse.VC.db
-C++/Task1/Task 1/.vs/Task 1/v17/DocumentLayout.backup.json
-C++/Task1/Task 1/.vs/Task 1/v17/DocumentLayout.json
-C++/Task1/Task 1/.vs/Task 1/v17/ipch/AutoPCH/db5bef364727e9a3/TASK 1.ipch
-C++/Task2/Task2/.vs/Task2/v17/.suo
-C++/Task2/Task2/.vs/Task2/v17/Browse.VC.db
-C++/Task2/Task2/.vs/Task2/v17/Browse.VC.db-shm
-C++/Task2/Task2/.vs/Task2/v17/Browse.VC.db-wal
-C++/Task2/Task2/.vs/Task2/v17/Browse.VC.opendb
-C++/Task2/Task2/.vs/Task2/v17/DocumentLayout.json
-C++/Task2/Task2/.vs/Task2/v17/ipch/AutoPCH/24c32528059b16fb/TASK2.ipch
+
+# Visual Studio artifacts
+.vs/
+**/.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.opendb
+*.VC.db
+*.VC.db-shm
+*.VC.db-wal
+*.ipch
+# Build directories
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+[Xx]64/
+[Xx]86/
+[Bb]uild/
+[Bb]in/
+[Ii]pch/
+
+# Temporary files
+*.log
+*.tlog
+*.tmp
+
+# Visual C++ project-specific
+*.vcproj.*
+*.vcxproj.user
+*.vcxproj.filters
+*.psess
+
+# Visual Studio cache files
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.ipdb
+*.iobj
+*.res
+*.tlh
+*.tli
+*.tmp_proj
+*.idb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlh
+*.tli
+
+# Others
+*.dbmdl
+*.bak

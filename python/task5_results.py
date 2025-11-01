@@ -46,6 +46,30 @@ def format_student(student: Student) -> str:
     return f"{student.last_name}, {student.first_name} — Grade {student.grade}"
 
 
+def write_students(
+    students: Iterable[Student],
+    csv_path: Path,
+) -> None:
+    """Write *students* to *csv_path* in CSV format."""
+
+    with csv_path.open("w", newline="", encoding="utf-8") as csv_file:
+        writer = csv.DictWriter(
+            csv_file, fieldnames=["first_name", "last_name", "grade"]
+        )
+        writer.writeheader()
+        for student in students:
+            writer.writerow(
+                {
+                    "first_name": student.first_name,
+                    "last_name": student.last_name,
+                    "grade": student.grade,
+                }
+            )
+
+
 if __name__ == "__main__":
-    for student in sort_by_last_name_desc(load_students()):
+    sorted_students = sort_by_last_name_desc(load_students())
+    for student in sorted_students:
         print(format_student(student))
+
+    write_students(sorted_students, DATA_PATH.with_name("students_sorted.csv"))

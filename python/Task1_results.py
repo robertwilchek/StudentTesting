@@ -2,7 +2,7 @@
 from pathlib import Path
 
 
-OUTPUT_FILENAME = "hello.txt"
+OUTPUT_FILENAME = "..\hello.txt"
 
 
 def main() -> None:

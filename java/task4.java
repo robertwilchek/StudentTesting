@@ -1,7 +1,6 @@
 import java.util.*;
 
 public class task4 {
-    // Embedded model class so no external file is needed
     static class Person {
         final String first;
         final String last;
@@ -21,8 +20,6 @@ public class task4 {
             new Person("Cara", "Lopez", 27),
             new Person("Ben", "Adams", 35)
         };
-
-        // TODO: Sort by last ASC, then age DESC, then first ASC
 
 
         for (Person p : people) System.out.println(p);

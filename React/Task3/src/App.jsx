@@ -24,9 +24,7 @@ function App() {
   const [people, setPeople] = useState(randomizedPeople);
 
   const handleSort = () => {
-    const sorted = [...PEOPLE].sort((a, b) =>
-      a.lastName.localeCompare(b.lastName, undefined, { sensitivity: 'base' })
-    );
+
     setPeople(sorted);
   };
 

@@ -6,4 +6,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-);
+; // TODO: restore closing parenthesis before running the app

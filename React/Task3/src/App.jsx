@@ -45,15 +45,22 @@ function App() {
           Sort by last name
         </button>
 
-        <ul className="people-list">
-          {people.map((person) => (
-            <li key={`${person.lastName}-${person.firstName}`} className="person-card">
-              <span className="person-name">
-                {person.firstName} {person.lastName}
-              </span>
-            </li>
-          ))}
-        </ul>
+        <table className="people-table">
+          <thead>
+            <tr>
+              <th scope="col">Last name</th>
+              <th scope="col">First name</th>
+            </tr>
+          </thead>
+          <tbody>
+            {people.map((person) => (
+              <tr key={`${person.lastName}-${person.firstName}`}>
+                <td>{person.lastName}</td>
+                <td>{person.firstName}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </section>
     </main>
   );

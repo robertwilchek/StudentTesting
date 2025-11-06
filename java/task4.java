@@ -22,7 +22,7 @@ public class task4 {
             new Person("Ben", "Adams", 35)
         };
 
-        // TODO: Sort by last ASC, then age DESC, then first ASC
+        
 
 
         for (Person p : people) System.out.println(p);

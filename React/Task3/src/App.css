@@ -65,35 +65,42 @@ p {
   box-shadow: 0 8px 16px rgba(37, 99, 235, 0.35);
 }
 
-.people-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
-}
-
-.person-card {
-  background-color: #f1f5f9;
+.people-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f8fafc;
   border-radius: 18px;
-  padding: 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
-.person-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(30, 64, 175, 0.18);
+.people-table thead {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
 }
 
-.person-name {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #1e293b;
+.people-table th,
+.people-table td {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  font-size: 1rem;
+  border-bottom: 1px solid #cbd5f5;
+}
+
+.people-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.people-table tbody tr:nth-child(even) {
+  background-color: #e2e8f0;
+}
+
+.people-table tbody tr:hover {
+  background-color: #dbeafe;
+}
+
+.people-table tbody tr:last-child td {
+  border-bottom: none;
 }
 
 @media (max-width: 600px) {

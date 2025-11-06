@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   const handleClick = () => {
-    setCount((previous) => previous + 1);
+    ++count;
   };
 
   const buttonLabel = count === 0 ? 'Click to start counting' : String(count);
